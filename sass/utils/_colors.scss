@@ -1,0 +1,76 @@
+/* Цвет основного текста: #757575 */
+/* Цвет титулов: #212121 */
+/* Акцент: #2196F3 */
+/* Цвет адрессных ссылок: #FFFFFF99 */
+/* Основной цвет фона: #FFFFFF */
+/* Цвет фона вторичный: #F5F4FA */
+/* Минорный цвет фона: #EEEEEE */
+/* Цвет фона Hero: #2f303a */
+/* Белый: rgba(255, 255, 255, 1) */
+/* Цвет фона Footer #2F303A */
+/* Цвет фона Header #fff */
+/* Цвет рамки хедера #ECECEC */
+/* Цвет иконок #AFB1B8 */
+/* Dropbox bgc rgba(0, 0, 0, 0.1) */
+/* Modal bgc #FFFFFF */
+
+$colors: (
+  'primary-text': #757575,
+  'title': #212121,
+  'accent': #2196f3,
+  'addr-links': #ffffff99,
+  'bg-prime': #ffffff,
+  'bg-minor': #f5f4fa,
+  'border-prj': #eeeeee,
+  'border-header': #ececec,
+  'bg-hero': #2f303a,
+  'bg-footer': #2f303a,
+  'bg-backdrop': rgba(0, 0, 0, 0.1),
+  'bg-footer-social-network-icon': #ffffff1a,
+  'icon': #afb1b8,
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
+
+// $shadow: (
+//   'team-item': 0px 1px 3px rgba(0, 0, 0, 0.12),
+//   0px 1px 1px rgba(0, 0, 0, 0.14),
+//   0px 2px 1px rgba(0, 0, 0, 0.2),
+// );
+
+// --primary-text-color: #757575;
+// $colorPrimaryText: #757575;
+// --title-text-color: #212121;
+// $colorTitle: #212121;
+// --accent-color: #2196f3;
+// $colorAccent: #2196f3;
+// --addres-links-color: #ffffff99;
+// $colorAddrLinks: #ffffff99;
+// --basic-backgroud-color: #ffffff;
+// $colorBgPrime: #ffffff;
+// --background-color: #f5f4fa;
+// $colorBgMinor: #f5f4fa;
+// --minor-bgc: #eeeeee;
+// $colorBorderPrj: #eeeeee;
+// --header-border-color: #ececec;
+// $colorBorderHeader: #ececec;
+// --hero-bgc: #2f303a;
+// $colorBgHero: #2f303a;
+// --footer-bgc: #2f303a;
+// $colorBgFooter: #2f303a;
+// --dropbox-bgc: rgba(0, 0, 0, 0.1);
+// $colorBgDropbox: rgba(0, 0, 0, 0.1);
+// --icon-color: #afb1b8;
+// $colorIcon: #afb1b8;
+// --team-list-item-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+//   0px 2px 1px rgba(0, 0, 0, 0.2);
+// $shadowTeamItem: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+//   0px 2px 1px rgba(0, 0, 0, 0.2);
+// --card-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+//   1px 4px 6px rgba(0, 0, 0, 0.16);
+// --modal-bgc: #ffffff;
+// --white-color: #fff;
+// --black-color: #212121;
+// --header-bgc: #fff;

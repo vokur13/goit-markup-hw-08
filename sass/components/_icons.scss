@@ -1,0 +1,32 @@
+$iconSocialntwrk: 'instagram', 'twitter', 'facebook', 'linkedin';
+$iconAbout: 'antenna', 'astronaut', 'clock', 'diagram';
+$iconClient: 'logo-1', 'logo-2', 'logo-3', 'logo-4', 'logo-5', 'logo-6';
+
+.social-netwrk {
+  &__list {
+    display: flex;
+    padding: 0;
+    width: fit-content;
+    height: 44px;
+  }
+  &__item {
+    &:not(:last-of-type) {
+      margin-right: 10px;
+    }
+  }
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    transition: color 250ms $timing-func, background-color 250ms $timing-func,
+      fill 250ms $timing-func;
+  }
+  &__icon {
+    width: 20px;
+    height: 20px;
+  }
+}
