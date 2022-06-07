@@ -44,6 +44,12 @@ img {
   margin: 0;
 }
 
+@media (min-width: 800px) {
+  body {
+    background-color: orange;
+  }
+}
+
 /* Цвет основного текста: #757575 */
 /* Цвет титулов: #212121 */
 /* Акцент: #2196F3 */

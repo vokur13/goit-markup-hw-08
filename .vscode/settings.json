@@ -16,5 +16,5 @@
   "liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"],
   "compile-hero.disable-compile-files-on-did-save-code": false,
   "liveServer.settings.ChromeDebuggingAttachment": false,
-  "liveServer.settings.port": 5501
+  "liveServer.settings.port": 5502
 }

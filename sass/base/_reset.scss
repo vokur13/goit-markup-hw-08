@@ -53,3 +53,9 @@ img {
   height: auto;
   margin: 0;
 }
+
+@media (min-width: 800px) {
+  body {
+    background-color: orange;
+  }
+}
