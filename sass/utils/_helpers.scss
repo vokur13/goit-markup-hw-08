@@ -4,6 +4,21 @@
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+    background-color: orange;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+    background-color: green;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+    background-color: blue;
+  }
 }
 
 %visually-hidden {

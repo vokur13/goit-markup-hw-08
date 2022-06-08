@@ -44,12 +44,6 @@ img {
   margin: 0;
 }
 
-@media (min-width: 800px) {
-  body {
-    background-color: orange;
-  }
-}
-
 /* Цвет основного текста: #757575 */
 /* Цвет титулов: #212121 */
 /* Акцент: #2196F3 */
@@ -71,6 +65,27 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    background-color: orange;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    background-color: green;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    background-color: blue;
+  }
 }
 
 .about__title, .portfolio__title {
