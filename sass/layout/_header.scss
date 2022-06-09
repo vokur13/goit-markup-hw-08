@@ -34,12 +34,6 @@
 
     @include respond-to('tablet') {
       display: flex;
-      align-items: center;
-    }
-
-    @include respond-to('desktop') {
-      display: flex;
-      align-items: center;
     }
   }
 }
@@ -47,24 +41,24 @@
 .header-studio-contacts {
   display: none;
 
-  @include respond-to('mobile') {
-    display: none;
-  }
-
   @include respond-to('tablet') {
     display: block;
 
     width: fit-content;
     margin-left: auto;
+  }
 
-    &__item {
+  &__item {
+    @include respond-to('tablet') {
       &:not(:last-child) {
         margin-bottom: 10px;
         margin-right: 0;
       }
     }
+  }
 
-    &__link {
+  &__link {
+    @include respond-to('tablet') {
       font-weight: 500;
 
       font-size: 12px;
@@ -81,7 +75,10 @@
         color: getColor('accent');
       }
     }
-    &__icon {
+  }
+
+  &__icon {
+    @include respond-to('tablet') {
       margin-right: 8px;
       width: 14px;
     }

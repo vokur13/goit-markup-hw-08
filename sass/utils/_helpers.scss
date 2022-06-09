@@ -7,15 +7,15 @@
   outline: 1px solid red;
 
   @include respond-to('mobile') {
-    min-width: $mobile;
+    width: $mobile;
   }
 
   @include respond-to('tablet') {
-    min-width: $tablet;
+    width: $tablet;
   }
 
   @include respond-to('desktop') {
-    min-width: $desktop;
+    width: $desktop;
   }
 }
 
