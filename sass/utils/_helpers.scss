@@ -1,4 +1,5 @@
 .container {
+  min-width: 320px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -6,15 +7,15 @@
   outline: 1px solid red;
 
   @include respond-to('mobile') {
-    width: $mobile;
+    min-width: $mobile;
   }
 
   @include respond-to('tablet') {
-    width: $tablet;
+    min-width: $tablet;
   }
 
   @include respond-to('desktop') {
-    width: $desktop;
+    min-width: $desktop;
   }
 }
 
