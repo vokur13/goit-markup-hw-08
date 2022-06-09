@@ -56,6 +56,7 @@
   &__item {
     // width: 370px;
     // flex-basis: calc((1 / #{$portfolio-card-box-nmbr-row} - #{$portfolio-card-box-nmbr-row} - 1));
+    // width: calc (100%-2*10px)/2; - пример Рпт (1:00:00 Webinar)
     margin-right: $item-gap;
     margin-bottom: $item-gap;
   }

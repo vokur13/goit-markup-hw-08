@@ -1,23 +1,65 @@
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
 
+  padding-top: 16px;
+  padding-bottom: 16px;
+
   background-color: getColor('bg-prime');
   border-bottom: 1px solid getColor('border-header');
   z-index: 1;
+
+  @include respond-to('mobile') {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  @include respond-to('tablet') {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+
+  @include respond-to('desktop') {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+
   &__container {
-    display: flex;
-    align-items: center;
+    @include respond-to('mobile') {
+      display: block;
+      align-items: center;
+    }
+
+    @include respond-to('tablet') {
+      display: flex;
+      align-items: center;
+    }
+
+    @include respond-to('desktop') {
+      display: flex;
+      align-items: center;
+    }
   }
 }
 
 .header-studio-contacts {
-  display: flex;
-  flex-wrap: nowrap;
+  display: none;
+
+  @include respond-to('mobile') {
+    display: none;
+  }
+
+  @include respond-to('tablet') {
+    display: block;
+  }
+
+  @include respond-to('desktop') {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
   width: fit-content;
   margin-left: auto;
   &__item:not(:last-child) {
