@@ -1,19 +1,55 @@
+@include respond-to('mobile') {
+}
+
+@include respond-to('desktop') {
+}
+
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: getColor('bg-footer');
   &__container {
-    display: flex;
-    align-items: baseline;
-  }
-}
+    display: block;
 
-.footer {
+    @include respond-to('desktop') {
+      display: flex;
+      align-items: baseline;
+    }
+  }
+
+  &__thumb {
+    display: block;
+    margin-bottom: 60px;
+
+    @include respond-to('tablet') {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 60;
+    }
+
+    @include respond-to('desktop') {
+      margin-bottom: 0;
+      align-items: baseline;
+    }
+  }
+
   &__logo {
     color: getColor('bg-prime');
   }
+
   &__contacts {
-    margin-right: 70px;
+    margin-bottom: 60px;
+    text-align: center;
+
+    @include respond-to('tablet') {
+      margin-bottom: 0;
+      margin-right: 165px;
+    }
+
+    @include respond-to('desktop') {
+      margin-right: 70px;
+      text-align: left;
+    }
   }
 }
 
@@ -24,7 +60,12 @@
   }
   &__item {
     &:not(:last-child) {
-      margin-bottom: 9px;
+      margin-bottom: 8px;
+    }
+    @include respond-to('desktop') {
+      :not(:last-child) {
+        margin-bottom: 9px;
+      }
     }
   }
   &__addr {
@@ -57,6 +98,13 @@
 }
 
 .follow {
+  text-align: center;
+
+  @include respond-to('desktop') {
+    text-align: left;
+    margin-bottom: 0;
+  }
+
   &__text {
     font-weight: 700;
     font-size: 14px;
@@ -71,6 +119,8 @@
 .footer-social-netwrk {
   &__list {
     margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
   }
   &__link {
     background-color: getColor('bg-footer-social-network-icon');
@@ -85,8 +135,14 @@
 
 .sbscrb {
   display: block;
+  text-align: center;
   margin-right: 0;
   margin-left: auto;
+
+  @include respond-to('desktop') {
+    text-align: left;
+  }
+
   &__text {
     margin-bottom: 20px;
     font-weight: 700;

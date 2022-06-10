@@ -98,8 +98,8 @@
       <!-- About -->
 
       <section class="section about">
+        <h2 class="title section__title about__title">Наши преимущества</h2>
         <div class="container about__container">
-          <h2 class="title section__title about__title">Наши преимущества</h2>
           <ul class="about__list">
             <li class="about__item">
               <div class="about__body">
@@ -156,9 +156,9 @@
       <!-- Profile -->
 
       <section class="section profile">
-        <div class="container profile__container">
-          <h2 class="title section__title profile__title">Чем мы занимаемся</h2>
+        <h2 class="title section__title profile__title">Чем мы занимаемся</h2>
 
+        <div class="container profile__container">
           <ul class="profile__list">
             <li class="profile__item">
               <div class="profile__thumb">
@@ -187,12 +187,11 @@
       <!-- Our Team -->
 
       <section class="section team">
+        <h2 class="title section__title team__title">Наша команда</h2>
         <div class="container team__container">
-          <h2 class="title section__title team__title">Наша команда</h2>
-
           <ul class="team__list">
             <li class="team__item">
-              <img src="images/staff/staff1.jpg" alt="Product Designer" width="270" />
+              <img src="images/staff/staff1.jpg" alt="Product Designer" />
               <div class="team__card">
                 <h3 class="title team__sub-title">Игорь Демьяненко</h3>
                 <p class="team__position">Product Designer</p>
@@ -245,7 +244,7 @@
             </li>
 
             <li class="team__item">
-              <img src="images/staff/staff2.jpg" alt="Frontend Developer" width="270" />
+              <img src="images/staff/staff2.jpg" alt="Frontend Developer" />
               <div class="team__card">
                 <h3 class="title team__sub-title">Ольга Репина</h3>
                 <p class="team__position">Frontend Developer</p>
@@ -298,7 +297,7 @@
             </li>
 
             <li class="team__item">
-              <img src="images/staff/staff3.jpg" alt="Marketing" width="270" />
+              <img src="images/staff/staff3.jpg" alt="Marketing" />
               <div class="team__card">
                 <h3 class="title team__sub-title">Николай Тарасов</h3>
                 <p class="team__position">Marketing</p>
@@ -351,7 +350,7 @@
             </li>
 
             <li class="team__item">
-              <img src="images/staff/staff4.jpg" alt="UI Designer" width="270" />
+              <img src="images/staff/staff4.jpg" alt="UI Designer" />
               <div class="team__card">
                 <h3 class="title team__sub-title">Михаил Ермаков</h3>
                 <p class="team__position">UI Designer</p>
@@ -409,8 +408,8 @@
       <!-- Our Clients -->
 
       <section class="section clients">
+        <h2 class="title section__title clients__title">Постоянные клиенты</h2>
         <div class="container clients__container">
-          <h2 class="title section__title clients__title">Постоянные клиенты</h2>
           <ul class="clients__list">
             <li class="clients__item">
               <a href="" class="clients__link">
@@ -466,86 +465,88 @@
     <!-- Footer -->
     <footer class="footer">
       <div class="container footer__container">
-        <div class="contacts footer__contacts">
-          <a class="logo footer__logo" href="./index.html"
-            ><span class="logo__accent">Web</span>Studio</a
-          >
-          <address class="studio-contacts footer-studio-contacts">
-            <ul class="studio-contacts__list footer-studio-contacts__list">
-              <li class="studio-contacts__item footer-studio-contacts__item">
+        <div class="footer__thumb">
+          <div class="contacts footer__contacts">
+            <a class="logo footer__logo" href="./index.html"
+              ><span class="logo__accent">Web</span>Studio</a
+            >
+            <address class="studio-contacts footer-studio-contacts">
+              <ul class="studio-contacts__list footer-studio-contacts__list">
+                <li class="studio-contacts__item footer-studio-contacts__item">
+                  <a
+                    class="studio-contacts__addr footer-studio-contacts__addr"
+                    href="https://www.google.com/maps/place/бул.+Леси+Украинки,+26,+Киев,+02000"
+                    target="_blank"
+                    rel="noopener nofollow noreferrer"
+                    >г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+                <li class="studio-contacts__item footer-studio-contacts__item">
+                  <a
+                    class="studio-contacts__link footer-studio-contacts__link"
+                    href="mailto:info@example.com"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="studio-contacts__item footer-studio-contacts__item">
+                  <a
+                    class="studio-contacts__link footer-studio-contacts__link"
+                    href="tel:+380991111111"
+                    >+38 099 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="follow">
+            <p class="follow__text">присоедняйтесь</p>
+            <ul class="social-netwrk__list footer-social-netwrk__list">
+              <li class="social-netwrk__item footer-social-netwrk__item">
                 <a
-                  class="studio-contacts__addr footer-studio-contacts__addr"
-                  href="https://www.google.com/maps/place/бул.+Леси+Украинки,+26,+Киев,+02000"
-                  target="_blank"
-                  rel="noopener nofollow noreferrer"
-                  >г. Киев, пр-т Леси Украинки, 26</a
+                  href="https://www.instagram.com"
+                  class="social-netwrk__link footer-social-netwrk__link"
                 >
+                  <svg class="social-netwrk__icon footer-social-netwrk__icon">
+                    <use href="./images/svg/webstudio-icons-optimized.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="studio-contacts__item footer-studio-contacts__item">
+
+              <li class="social-netwrk__item footer-social-netwrk__item">
                 <a
-                  class="studio-contacts__link footer-studio-contacts__link"
-                  href="mailto:info@example.com"
-                  >info@example.com</a
+                  href="https://www.instagram.com"
+                  class="social-netwrk__link footer-social-netwrk__link"
                 >
+                  <svg class="social-netwrk__icon footer-social-netwrk__icon">
+                    <use href="./images/svg/webstudio-icons-optimized.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="studio-contacts__item footer-studio-contacts__item">
+
+              <li class="social-netwrk__item footer-social-netwrk__item">
                 <a
-                  class="studio-contacts__link footer-studio-contacts__link"
-                  href="tel:+380991111111"
-                  >+38 099 111 11 11</a
+                  href="https://www.instagram.com"
+                  class="social-netwrk__link footer-social-netwrk__link"
                 >
+                  <svg class="social-netwrk__icon footer-social-netwrk__icon">
+                    <use href="./images/svg/webstudio-icons-optimized.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="social-netwrk__item footer-social-netwrk__item">
+                <a
+                  href="https://www.instagram.com"
+                  class="social-netwrk__link footer-social-netwrk__link"
+                >
+                  <svg class="social-netwrk__icon footer-social-netwrk__icon">
+                    <use href="./images/svg/webstudio-icons-optimized.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-
-        <div class="follow">
-          <p class="follow__text">присоедняйтесь</p>
-          <ul class="social-netwrk__list footer-social-netwrk__list">
-            <li class="social-netwrk__item footer-social-netwrk__item">
-              <a
-                href="https://www.instagram.com"
-                class="social-netwrk__link footer-social-netwrk__link"
-              >
-                <svg class="social-netwrk__icon footer-social-netwrk__icon">
-                  <use href="./images/svg/webstudio-icons-optimized.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-
-            <li class="social-netwrk__item footer-social-netwrk__item">
-              <a
-                href="https://www.instagram.com"
-                class="social-netwrk__link footer-social-netwrk__link"
-              >
-                <svg class="social-netwrk__icon footer-social-netwrk__icon">
-                  <use href="./images/svg/webstudio-icons-optimized.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-
-            <li class="social-netwrk__item footer-social-netwrk__item">
-              <a
-                href="https://www.instagram.com"
-                class="social-netwrk__link footer-social-netwrk__link"
-              >
-                <svg class="social-netwrk__icon footer-social-netwrk__icon">
-                  <use href="./images/svg/webstudio-icons-optimized.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-
-            <li class="social-netwrk__item footer-social-netwrk__item">
-              <a
-                href="https://www.instagram.com"
-                class="social-netwrk__link footer-social-netwrk__link"
-              >
-                <svg class="social-netwrk__icon footer-social-netwrk__icon">
-                  <use href="./images/svg/webstudio-icons-optimized.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
 
         <div class="sbscrb">
@@ -667,6 +668,7 @@
         </form>
       </div>
     </div>
+    <script src="./js/header.js"></script>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>

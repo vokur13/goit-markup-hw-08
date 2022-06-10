@@ -13,6 +13,7 @@
     &--close {
       display: none;
     }
+    transition: fill 250ms $timing-func;
   }
 
   &__button {
@@ -22,31 +23,42 @@
     display: inline-flex;
     border: none;
     background-color: transparent;
+    color: getColor('title');
+    fill: currentColor;
+    &:hover,
+    // &:focus
+    {
+      .site-nav {
+        &__icon {
+          fill: getColor('accent');
+        }
+      }
+    }
 
-    &.is-open {
-      .site-nav__icon--close {
-        display: block;
-      }
-      .site-nav__icon--menu {
-        display: none;
-      }
-    }
+    // &.is-open {
+    //   .site-nav__icon--close {
+    //     display: block;
+    //   }
+    //   .site-nav__icon--menu {
+    //     display: none;
+    //   }
+    // }
   }
-  &__menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 600px;
-    background-color: bisque;
-    padding: 20px;
-    text-align: center;
-    font-size: 20px;
-    &.is-open {
-      display: block;
-    }
-  }
+  // &__menu {
+  //   display: none;
+  //   position: absolute;
+  //   top: 100%;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 600px;
+  //   background-color: bisque;
+  //   padding: 20px;
+  //   text-align: center;
+  //   font-size: 20px;
+  //   &.is-open {
+  //     display: block;
+  //   }
+  // }
 
   &__list {
     @include respond-to('tablet') {
