@@ -1,6 +1,12 @@
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include respond-to('desktop') {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
   &__title {
     margin-bottom: 30px;
     font-weight: 900;
@@ -16,12 +22,20 @@
 
 .projects-filter {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: -8px;
+
+  @include respond-to('tablet') {
+    justify-content: center;
+  }
+
+  @include respond-to('desktop') {
+    display: flex;
+  }
+
   &__item {
-    &:not(:last-child) {
-      margin-right: 8px;
-    }
+    margin: 8px;
   }
   &__button {
     padding: 6px 22px;
@@ -48,17 +62,32 @@
 }
 
 .projects {
+  outline: 1px solid green;
   display: flex;
   flex-wrap: wrap;
+  margin: -15px;
+  margin-top: 40px;
 
-  margin-right: calc(-1 * #{$item-gap});
-  margin-bottom: calc(-1 * #{$item-gap});
+  @include respond-to('tablet') {
+    margin-top: 30px;
+  }
+
+  @include respond-to('desktop') {
+    margin-top: 50px;
+  }
+
   &__item {
-    // width: 370px;
-    // flex-basis: calc((1 / #{$portfolio-card-box-nmbr-row} - #{$portfolio-card-box-nmbr-row} - 1));
-    // width: calc (100%-2*10px)/2; - пример Рпт (1:00:00 Webinar)
-    margin-right: $item-gap;
-    margin-bottom: $item-gap;
+    outline: 1px solid blue;
+    flex-basis: calc((100% - 2 * 15px) / 1);
+    margin: 15px;
+
+    @include respond-to('tablet') {
+      flex-basis: calc((100% - 4 * 15px) / 2);
+    }
+
+    @include respond-to('desktop') {
+      flex-basis: calc((100% - 6 * 15px) / 3);
+    }
   }
   &__link {
     display: block;
@@ -92,8 +121,8 @@
     transition: transform 250ms $timing-func;
   }
   &__text {
-    font-size: 18px;
     font-weight: 400;
+    font-size: 18px;
     line-height: calc(28 / 18);
     color: getColor('bg-prime');
     opacity: 0;

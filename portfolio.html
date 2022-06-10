@@ -29,6 +29,25 @@
           <a class="logo site-nav__logo" href="./index.html"
             ><span class="logo__accent">Web</span>Studio</a
           >
+          <button
+            type="button"
+            class="site-nav__button is-open"
+            aria-expanded="false"
+            aria-controls="site-nav__menu"
+            data-menu-button
+          >
+            <svg width="40" height="40" aria-label="Mobile menu toggle">
+              <use
+                class="site-nav__icon site-nav__icon--menu"
+                href="./images/svg/webstudio-icons-v-2-0-raw.svg#icon-menu_40px"
+              ></use>
+              <use
+                class="site-nav__icon site-nav__icon--close"
+                href="./images/svg/webstudio-icons-v-2-0-raw.svg#icon-close_40px"
+              ></use>
+            </svg>
+          </button>
+          <div class="site-nav__menu is-open" id="site-nav__menu" data-menu>Content menu</div>
           <ul class="site-nav__list">
             <li class="site-nav__item">
               <a class="site-nav__link" href="./index.html">Студия</a>
@@ -67,9 +86,8 @@
       <!-- Portfolio -->
 
       <section class="section portfolio">
+        <h1 class="title portfolio__title portfolio__title--visually-hidden">Projects filter</h1>
         <div class="container portfolio__container">
-          <h1 class="title portfolio__title portfolio__title--visually-hidden">Projects filter</h1>
-
           <!--Projects Filter-->
 
           <ul class="projects-filter">
@@ -100,7 +118,7 @@
             <li class="projects__item">
               <a href="" class="projects__link">
                 <div class="projects__thumb">
-                  <img src="./images/projects-links/proj1.jpg" alt="Технокряк" width="370" />
+                  <img src="./images/projects-links/proj1.jpg" alt="Технокряк" />
                   <div class="projects__dscrpt">
                     <p class="projects__text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -123,7 +141,6 @@
                   <img
                     src="./images/projects-links/proj2.jpg"
                     alt="Постер New Orlean vs Golden Star"
-                    width="370"
                   />
                   <div class="projects__dscrpt">
                     <p class="projects__text">
@@ -144,7 +161,7 @@
             <li class="projects__item">
               <a class="projects__link" href="">
                 <div class="projects__thumb">
-                  <img src="./images/projects-links/proj3.jpg" alt="Ресторан Seafood" width="370" />
+                  <img src="./images/projects-links/proj3.jpg" alt="Ресторан Seafood" />
                   <div class="projects__dscrpt">
                     <p class="projects__text">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam culpa excepturi
@@ -164,7 +181,7 @@
             <li class="projects__item">
               <a class="projects__link" href="">
                 <div class="projects__thumb">
-                  <img src="./images/projects-links/proj4.jpg" alt="Проект Prime" width="370" />
+                  <img src="./images/projects-links/proj4.jpg" alt="Проект Prime" />
                   <div class="projects__dscrpt">
                     <p class="projects__text">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam culpa excepturi
@@ -184,7 +201,7 @@
             <li class="projects__item">
               <a class="projects__link" href="">
                 <div class="projects__thumb">
-                  <img src="./images/projects-links/proj5.jpg" alt="Проект Boxes" width="370" />
+                  <img src="./images/projects-links/proj5.jpg" alt="Проект Boxes" />
                   <div class="projects__dscrpt">
                     <p class="projects__text">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam culpa excepturi
@@ -204,11 +221,7 @@
             <li class="projects__item">
               <a class="projects__link" href="">
                 <div class="projects__thumb">
-                  <img
-                    src="./images/projects-links/proj6.jpg"
-                    alt="Inspiration has no Borders"
-                    width="370"
-                  />
+                  <img src="./images/projects-links/proj6.jpg" alt="Inspiration has no Borders" />
                   <div class="projects__dscrpt">
                     <p class="projects__text">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam culpa excepturi
@@ -228,11 +241,7 @@
             <li class="projects__item">
               <a class="projects__link" href="">
                 <div class="projects__thumb">
-                  <img
-                    src="./images/projects-links/proj7.jpg"
-                    alt="Издание Limited Edition"
-                    width="370"
-                  />
+                  <img src="./images/projects-links/proj7.jpg" alt="Издание Limited Edition" />
                   <div class="projects__dscrpt">
                     <p class="projects__text">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam culpa excepturi
@@ -252,7 +261,7 @@
             <li class="projects__item">
               <a class="projects__link" href="">
                 <div class="projects__thumb">
-                  <img src="./images/projects-links/proj8.jpg" alt="Проект LAB" width="370" />
+                  <img src="./images/projects-links/proj8.jpg" alt="Проект LAB" />
                   <div class="projects__dscrpt">
                     <p class="projects__text">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam culpa excepturi
@@ -272,7 +281,7 @@
             <li class="projects__item">
               <a class="projects__link" href="">
                 <div class="projects__thumb">
-                  <img src="./images/projects-links/proj9.jpg" alt="Growing Business" width="370" />
+                  <img src="./images/projects-links/proj9.jpg" alt="Growing Business" />
                   <div class="projects__dscrpt">
                     <p class="projects__text">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam culpa excepturi
@@ -297,86 +306,88 @@
 
     <footer class="footer">
       <div class="container footer__container">
-        <div class="contacts footer__contacts">
-          <a class="logo footer__logo" href="./index.html"
-            ><span class="logo__accent">Web</span>Studio</a
-          >
-          <address class="studio-contacts footer-studio-contacts">
-            <ul class="studio-contacts__list footer-studio-contacts__list">
-              <li class="studio-contacts__item footer-studio-contacts__item">
+        <div class="footer__thumb">
+          <div class="contacts footer__contacts">
+            <a class="logo footer__logo" href="./index.html"
+              ><span class="logo__accent">Web</span>Studio</a
+            >
+            <address class="studio-contacts footer-studio-contacts">
+              <ul class="studio-contacts__list footer-studio-contacts__list">
+                <li class="studio-contacts__item footer-studio-contacts__item">
+                  <a
+                    class="studio-contacts__addr footer-studio-contacts__addr"
+                    href="https://www.google.com/maps/place/бул.+Леси+Украинки,+26,+Киев,+02000"
+                    target="_blank"
+                    rel="noopener nofollow noreferrer"
+                    >г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+                <li class="studio-contacts__item footer-studio-contacts__item">
+                  <a
+                    class="studio-contacts__link footer-studio-contacts__link"
+                    href="mailto:info@example.com"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="studio-contacts__item footer-studio-contacts__item">
+                  <a
+                    class="studio-contacts__link footer-studio-contacts__link"
+                    href="tel:+380991111111"
+                    >+38 099 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="follow">
+            <p class="follow__text">присоедняйтесь</p>
+            <ul class="social-netwrk__list footer-social-netwrk__list">
+              <li class="social-netwrk__item footer-social-netwrk__item">
                 <a
-                  class="studio-contacts__addr footer-studio-contacts__addr"
-                  href="https://www.google.com/maps/place/бул.+Леси+Украинки,+26,+Киев,+02000"
-                  target="_blank"
-                  rel="noopener nofollow noreferrer"
-                  >г. Киев, пр-т Леси Украинки, 26</a
+                  href="https://www.instagram.com"
+                  class="social-netwrk__link footer-social-netwrk__link"
                 >
+                  <svg class="social-netwrk__icon footer-social-netwrk__icon">
+                    <use href="./images/svg/webstudio-icons-optimized.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="studio-contacts__item footer-studio-contacts__item">
+
+              <li class="social-netwrk__item footer-social-netwrk__item">
                 <a
-                  class="studio-contacts__link footer-studio-contacts__link"
-                  href="mailto:info@example.com"
-                  >info@example.com</a
+                  href="https://www.instagram.com"
+                  class="social-netwrk__link footer-social-netwrk__link"
                 >
+                  <svg class="social-netwrk__icon footer-social-netwrk__icon">
+                    <use href="./images/svg/webstudio-icons-optimized.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="studio-contacts__item footer-studio-contacts__item">
+
+              <li class="social-netwrk__item footer-social-netwrk__item">
                 <a
-                  class="studio-contacts__link footer-studio-contacts__link"
-                  href="tel:+380991111111"
-                  >+38 099 111 11 11</a
+                  href="https://www.instagram.com"
+                  class="social-netwrk__link footer-social-netwrk__link"
                 >
+                  <svg class="social-netwrk__icon footer-social-netwrk__icon">
+                    <use href="./images/svg/webstudio-icons-optimized.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="social-netwrk__item footer-social-netwrk__item">
+                <a
+                  href="https://www.instagram.com"
+                  class="social-netwrk__link footer-social-netwrk__link"
+                >
+                  <svg class="social-netwrk__icon footer-social-netwrk__icon">
+                    <use href="./images/svg/webstudio-icons-optimized.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-
-        <div class="follow">
-          <p class="follow__text">присоедняйтесь</p>
-          <ul class="social-netwrk__list footer-social-netwrk__list">
-            <li class="social-netwrk__item footer-social-netwrk__item">
-              <a
-                href="https://www.instagram.com"
-                class="social-netwrk__link footer-social-netwrk__link"
-              >
-                <svg class="social-netwrk__icon footer-social-netwrk__icon">
-                  <use href="./images/svg/webstudio-icons-optimized.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-
-            <li class="social-netwrk__item footer-social-netwrk__item">
-              <a
-                href="https://www.instagram.com"
-                class="social-netwrk__link footer-social-netwrk__link"
-              >
-                <svg class="social-netwrk__icon footer-social-netwrk__icon">
-                  <use href="./images/svg/webstudio-icons-optimized.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-
-            <li class="social-netwrk__item footer-social-netwrk__item">
-              <a
-                href="https://www.instagram.com"
-                class="social-netwrk__link footer-social-netwrk__link"
-              >
-                <svg class="social-netwrk__icon footer-social-netwrk__icon">
-                  <use href="./images/svg/webstudio-icons-optimized.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-
-            <li class="social-netwrk__item footer-social-netwrk__item">
-              <a
-                href="https://www.instagram.com"
-                class="social-netwrk__link footer-social-netwrk__link"
-              >
-                <svg class="social-netwrk__icon footer-social-netwrk__icon">
-                  <use href="./images/svg/webstudio-icons-optimized.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
 
         <div class="sbscrb">
@@ -404,6 +415,7 @@
       </div>
     </footer>
 
+    <script src="./js/header.js"></script>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>

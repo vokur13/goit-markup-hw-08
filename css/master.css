@@ -1474,8 +1474,15 @@ img {
 }
 
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .portfolio__title {
@@ -1493,14 +1500,32 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: -8px;
 }
 
-.projects-filter__item:not(:last-child) {
-  margin-right: 8px;
+@media screen and (min-width: 768px) {
+  .projects-filter {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .projects-filter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.projects-filter__item {
+  margin: 8px;
 }
 
 .projects-filter__button {
@@ -1525,18 +1550,47 @@ img {
 }
 
 .projects {
+  outline: 1px solid green;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-right: calc(-1 * 30px);
-  margin-bottom: calc(-1 * 30px);
+  margin: -15px;
+  margin-top: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .projects {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .projects {
+    margin-top: 50px;
+  }
 }
 
 .projects__item {
-  margin-right: 30px;
-  margin-bottom: 30px;
+  outline: 1px solid blue;
+  -ms-flex-preferred-size: calc((100% - 2 * 15px) / 1);
+      flex-basis: calc((100% - 2 * 15px) / 1);
+  margin: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .projects__item {
+    -ms-flex-preferred-size: calc((100% - 4 * 15px) / 2);
+        flex-basis: calc((100% - 4 * 15px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .projects__item {
+    -ms-flex-preferred-size: calc((100% - 6 * 15px) / 3);
+        flex-basis: calc((100% - 6 * 15px) / 3);
+  }
 }
 
 .projects__link {
@@ -1583,8 +1637,8 @@ img {
 }
 
 .projects__text {
-  font-size: 18px;
   font-weight: 400;
+  font-size: 18px;
   line-height: calc(28 / 18);
   color: #ffffff;
   opacity: 0;
