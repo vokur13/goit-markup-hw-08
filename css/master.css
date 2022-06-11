@@ -443,6 +443,12 @@ img {
   display: block;
 }
 
+@media screen and (min-width: 768px) {
+  .site-nav__button.is-open .site-nav__icon--close {
+    display: none;
+  }
+}
+
 .site-nav__button.is-open .site-nav__icon--menu {
   display: none;
 }
@@ -468,6 +474,12 @@ img {
 
 .site-nav__menu.is-open {
   display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .site-nav__menu.is-open {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) {

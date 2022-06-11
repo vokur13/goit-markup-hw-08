@@ -5,10 +5,6 @@
     color: getColor('title');
   }
 
-  @include respond-to('tablet') {
-    // display: flex;
-  }
-
   &__icon {
     &--close {
       display: none;
@@ -23,6 +19,7 @@
     display: inline-flex;
     border: none;
     background-color: transparent;
+
     color: getColor('title');
     fill: currentColor;
     &:hover,
@@ -38,6 +35,10 @@
     &.is-open {
       .site-nav__icon--close {
         display: block;
+
+        @include respond-to('tablet') {
+          display: none;
+        }
       }
       .site-nav__icon--menu {
         display: none;
@@ -62,11 +63,11 @@
     font-size: 20px;
     &.is-open {
       display: block;
-    }
 
-    // @include respond-to('tablet') {
-    //   display: none;
-    // }
+      @include respond-to('tablet') {
+        display: none;
+      }
+    }
   }
 
   &__list {
