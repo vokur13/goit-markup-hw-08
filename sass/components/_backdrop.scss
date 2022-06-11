@@ -26,8 +26,8 @@
   top: 50%;
   left: 50%;
 
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   padding: 40px;
 
   opacity: 1;
@@ -38,6 +38,15 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   background-color: getColor('bg-prime');
+
+  @include respond-to('tablet') {
+  }
+
+  @include respond-to('desktop') {
+    width: 528px;
+    height: 581px;
+  }
+
   &__button {
     position: absolute;
     top: 0;
