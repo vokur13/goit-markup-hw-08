@@ -1573,10 +1573,10 @@ img {
 }
 
 .projects__item {
-  outline: 1px solid blue;
+  margin: 15px;
+  border: 1px solid #eeeeee;
   -ms-flex-preferred-size: calc((100% - 2 * 15px) / 1);
       flex-basis: calc((100% - 2 * 15px) / 1);
-  margin: 15px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1594,6 +1594,7 @@ img {
 }
 
 .projects__link {
+  height: 100%;
   display: block;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1647,9 +1648,8 @@ img {
 }
 
 .projects__label {
+  height: 100%;
   padding: 20px 24px;
-  border: 1px solid #eeeeee;
-  border-top: none;
 }
 
 .projects__title {

@@ -77,9 +77,9 @@
   }
 
   &__item {
-    outline: 1px solid blue;
-    flex-basis: calc((100% - 2 * 15px) / 1);
     margin: 15px;
+    border: 1px solid getColor('border-prj');
+    flex-basis: calc((100% - 2 * 15px) / 1);
 
     @include respond-to('tablet') {
       flex-basis: calc((100% - 4 * 15px) / 2);
@@ -89,7 +89,9 @@
       flex-basis: calc((100% - 6 * 15px) / 3);
     }
   }
+
   &__link {
+    height: 100%;
     display: block;
     transition: box-shadow 250ms $timing-func;
     &:hover,
@@ -104,10 +106,12 @@
       }
     }
   }
+
   &__thumb {
     position: relative;
     overflow: hidden;
   }
+
   &__dscrpt {
     position: absolute;
     width: 100%;
@@ -120,6 +124,7 @@
     transform: translateY(100%);
     transition: transform 250ms $timing-func;
   }
+
   &__text {
     font-weight: 400;
     font-size: 18px;
@@ -128,11 +133,12 @@
     opacity: 0;
     transition: opacity 250ms $timing-func 250ms;
   }
+
   &__label {
+    height: 100%;
     padding: 20px 24px;
-    border: 1px solid getColor('border-prj');
-    border-top: none;
   }
+
   &__title {
     margin-bottom: 4px;
 
