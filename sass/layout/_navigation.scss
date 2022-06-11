@@ -6,7 +6,7 @@
   }
 
   @include respond-to('tablet') {
-    display: flex;
+    // display: flex;
   }
 
   &__icon {
@@ -35,30 +35,39 @@
       }
     }
 
-    // &.is-open {
-    //   .site-nav__icon--close {
-    //     display: block;
-    //   }
-    //   .site-nav__icon--menu {
-    //     display: none;
-    //   }
+    &.is-open {
+      .site-nav__icon--close {
+        display: block;
+      }
+      .site-nav__icon--menu {
+        display: none;
+      }
+    }
+
+    @include respond-to('tablet') {
+      display: none;
+    }
+  }
+
+  &__menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 600px;
+    background-color: bisque;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    &.is-open {
+      display: block;
+    }
+
+    // @include respond-to('tablet') {
+    //   display: none;
     // }
   }
-  // &__menu {
-  //   display: none;
-  //   position: absolute;
-  //   top: 100%;
-  //   left: 0;
-  //   width: 100%;
-  //   height: 600px;
-  //   background-color: bisque;
-  //   padding: 20px;
-  //   text-align: center;
-  //   font-size: 20px;
-  //   &.is-open {
-  //     display: block;
-  //   }
-  // }
 
   &__list {
     @include respond-to('tablet') {
