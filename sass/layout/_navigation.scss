@@ -22,9 +22,7 @@
 
     color: getColor('title');
     fill: currentColor;
-    &:hover,
-    // &:focus
-    {
+    &:hover {
       .site-nav {
         &__icon {
           fill: getColor('accent');
