@@ -31,54 +31,109 @@
           >
           <button
             type="button"
-            class="site-nav__button is-open"
+            class="site-nav__button"
             aria-expanded="false"
             aria-controls="site-nav__menu"
             data-menu-button
           >
             <svg width="40" height="40" aria-label="Mobile menu toggle">
               <use
-                class="site-nav__icon site-nav__icon--menu"
-                href="./images/svg/webstudio-icons-v-2-0-raw.svg#icon-menu_40px"
-              ></use>
-              <use
                 class="site-nav__icon site-nav__icon--close"
                 href="./images/svg/webstudio-icons-v-2-0-raw.svg#icon-close_40px"
               ></use>
+              <use
+                class="site-nav__icon site-nav__icon--menu"
+                href="./images/svg/webstudio-icons-v-2-0-raw.svg#icon-menu_40px"
+              ></use>
             </svg>
           </button>
-          <div class="site-nav__menu is-open" id="site-nav__menu" data-menu>Content menu</div>
-          <ul class="site-nav__list">
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="./index.html">Студия</a>
-            </li>
+          <div class="site-nav__menu" id="site-nav__menu" data-menu>
+            <div class="site-nav__navigation">
+              <ul class="site-nav__list">
+                <li class="site-nav__item">
+                  <a class="site-nav__link" href="./index.html">Студия</a>
+                </li>
 
-            <li class="site-nav__item">
-              <a class="site-nav__link site-nav__link--active" href="./portfolio.html">Портфолио</a>
-            </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="">Контакты</a>
-            </li>
-          </ul>
+                <li class="site-nav__item">
+                  <a class="site-nav__link site-nav__link--active" href="./portfolio.html"
+                    >Портфолио</a
+                  >
+                </li>
+
+                <li class="site-nav__item">
+                  <a class="site-nav__link" href="">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="site-nav__contacts">
+              <ul class="header-studio-contacts">
+                <li class="header-studio-contacts__item">
+                  <a
+                    href="tel:+380961111111"
+                    class="header-studio-contacts__link header-studio-contacts__link--phone"
+                  >
+                    <svg class="header-studio-contacts__icon" width="10px" height="16px">
+                      <use
+                        href="./images/svg/webstudio-icons-optimized.svg#icon-smartphone"
+                      ></use></svg
+                    >+38 096 111 11 11
+                  </a>
+                </li>
+
+                <li class="header-studio-contacts__item">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="header-studio-contacts__link header-studio-contacts__link--e-mail"
+                  >
+                    <svg class="header-studio-contacts__icon" width="16px" height="12px">
+                      <use
+                        href="./images/svg/webstudio-icons-optimized.svg#icon-envelope"
+                      ></use></svg
+                    >info@devstudio.com
+                  </a>
+                </li>
+              </ul>
+              <ul class="header-studio-scl-ntwrk">
+                <li class="header-studio-scl-ntwrk header-studio-scl-ntwrk__item">
+                  <a
+                    href="https://www.instagram.com"
+                    target="_blank"
+                    rel="noopener nofollow noreferrer"
+                    class="header-studio-scl-ntwrk header-studio-scl-ntwrk__link"
+                    >Instagram</a
+                  >
+                </li>
+                <li class="header-studio-scl-ntwrk header-studio-scl-ntwrk__item">
+                  <a
+                    href="https://twitter.com"
+                    target="_blank"
+                    rel="noopener nofollow noreferrer"
+                    class="header-studio-scl-ntwrk header-studio-scl-ntwrk__link"
+                    >Twitter</a
+                  >
+                </li>
+                <li class="header-studio-scl-ntwrk header-studio-scl-ntwrk__item">
+                  <a
+                    href="https://www.facebook.com"
+                    target="_blank"
+                    rel="noopener nofollow noreferrer"
+                    class="header-studio-scl-ntwrk header-studio-scl-ntwrk__link"
+                    >Facebook</a
+                  >
+                </li>
+                <li class="header-studio-scl-ntwrk header-studio-scl-ntwrk__item">
+                  <a
+                    href="https://www.linkedin.com"
+                    target="_blank"
+                    rel="noopener nofollow noreferrer"
+                    class="header-studio-scl-ntwrk header-studio-scl-ntwrk__link"
+                    >LinkedIn</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
         </nav>
-
-        <ul class="header-studio-contacts">
-          <li class="header-studio-contacts__item">
-            <a href="mailto:info@devstudio.com" class="header-studio-contacts__link">
-              <svg class="header-studio-contacts__icon" width="16px" height="12px">
-                <use href="./images/svg/webstudio-icons-optimized.svg#icon-envelope"></use></svg
-              >info@devstudio.com
-            </a>
-          </li>
-
-          <li class="header-studio-contacts__item">
-            <a href="tel:+380961111111" class="header-studio-contacts__link">
-              <svg class="header-studio-contacts__icon" width="10px" height="16px">
-                <use href="./images/svg/webstudio-icons-optimized.svg#icon-smartphone"></use></svg
-              >+38 096 111 11 11
-            </a>
-          </li>
-        </ul>
       </div>
     </header>
 
