@@ -47,7 +47,6 @@
   }
 
   &__menu {
-    outline: 1px solid green;
     display: none;
 
     position: absolute;
@@ -68,7 +67,9 @@
       flex-grow: 1;
       justify-content: space-between;
       margin-right: 0;
+      width: 100%;
       height: 100%;
+      padding: 0;
     }
 
     &.is-open {
@@ -88,27 +89,34 @@
     width: 100%;
   }
 
+  &__navigation {
+    @include respond-to('tablet') {
+      display: flex;
+      margin-left: 88px;
+      width: 294px;
+    }
+  }
+
   &__list {
     display: block;
 
     @include respond-to('tablet') {
       display: flex;
+
       align-items: center;
-      margin-left: 93px;
+      // margin-left: 93px;
       padding: 0;
     }
   }
 
   &__item {
-    // display: block;
     &:not(:last-child) {
       margin-bottom: 32px;
     }
 
     @include respond-to('tablet') {
-      display: flex;
-      margin-bottom: 0px;
       &:not(:last-child) {
+        margin-bottom: 0px;
         margin-right: 50px;
       }
     }
@@ -143,11 +151,6 @@
 
       position: relative;
       display: block;
-      // transition: color 250ms $timing-func;
-      // &:hover,
-      // &:focus {
-      //   color: getColor('accent');
-      // }
       &--active {
         color: getColor('accent');
         &::after {
