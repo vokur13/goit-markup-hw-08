@@ -9,23 +9,23 @@
     background-color: getColor('bg-hero');
 
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../../images/banner/hero-img-480.jpg');
+      url('../images/banner/hero-img-480.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('../../images/banner/hero-img-480@2x.jpg');
+        url('../images/banner/hero-img-480@2x.jpg');
     }
 
     @include respond-to('tablet') {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('../../images/banner/hero-img-768.jpg');
+        url('../images/banner/hero-img-768.jpg');
 
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-          url('../../images/banner/hero-img-768@2x.jpg');
+          url('../images/banner/hero-img-768@2x.jpg');
       }
     }
 
@@ -33,11 +33,11 @@
       padding: 200px 0;
 
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('../../images/banner/hero-img-1600.jpg');
+        url('../images/banner/hero-img-1600.jpg');
 
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-          url('../../images/banner/hero-img-1600@2x.jpg');
+          url('../images/banner/hero-img-1600@2x.jpg');
       }
     }
   }
