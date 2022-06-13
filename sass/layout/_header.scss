@@ -29,7 +29,6 @@
   &__container {
     @include respond-to('mobile') {
       display: block;
-      align-items: center;
     }
 
     @include respond-to('tablet') {

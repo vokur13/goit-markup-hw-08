@@ -13,7 +13,3 @@ $colors: (
   'bg-footer-social-network-icon': #ffffff1a,
   'icon': #afb1b8,
 );
-
-@function getColor($key) {
-  @return map-get($colors, $key);
-}

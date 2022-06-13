@@ -30,10 +30,6 @@
     justify-content: center;
   }
 
-  @include respond-to('desktop') {
-    display: flex;
-  }
-
   &__item {
     margin: 8px;
   }

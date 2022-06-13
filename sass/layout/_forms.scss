@@ -38,7 +38,6 @@
   }
 
   &__input {
-    display: block;
     outline: 0;
     outline-offset: 0;
     border: none;
@@ -88,11 +87,7 @@
     letter-spacing: 0.03em;
     color: getColor('title');
 
-    @include respond-to('tablet') {
-    }
-
     @include respond-to('desktop') {
-      font-size: 20px;
       line-height: calc(23 / 20);
     }
   }

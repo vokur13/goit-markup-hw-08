@@ -42,7 +42,7 @@ a {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
   margin: 0;
 }
@@ -53,7 +53,6 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 1px solid red;
 }
 
 @media screen and (min-width: 480px) {
@@ -336,9 +335,6 @@ img {
 @media screen and (min-width: 480px) {
   .header__container {
     display: block;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
 }
 
@@ -798,7 +794,6 @@ img {
 }
 
 .form-sbscrb__input {
-  display: block;
   outline: 0;
   outline-offset: 0;
   border: none;
@@ -854,7 +849,6 @@ img {
 
 @media screen and (min-width: 1200px) {
   .form-modal__title {
-    font-size: 20px;
     line-height: calc(23 / 20);
   }
 }
@@ -1109,7 +1103,6 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-bottom: 60;
   }
 }
 
@@ -1782,14 +1775,6 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .projects-filter {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
   }
 }
 
