@@ -203,14 +203,6 @@
 
 /* ------------ Section Our Team ------------ */
 
-@include respond-to('tablet') {
-  // flex-basis: calc((100% - 4 * 15px) / 2);
-}
-
-@include respond-to('desktop') {
-  // flex-basis: calc((100% - 8 * 15px) / 4);
-}
-
 .team {
   padding-top: 60px;
   padding-bottom: 60px;
