@@ -54,7 +54,6 @@
   }
 
   &__button {
-    outline: 1px solid green;
     position: absolute;
     top: 92px;
     right: 14px;
@@ -70,17 +69,10 @@
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: getColor('bg-prime');
-    // overflow: hidden;
-    // color: getColor('title');
-    // fill: currentColor;
-    // transition: fill 250ms $timing-func;
+
     &:hover,
-    &:focus {
-      border-color: tomato;
-      // fill: getColor('accent');
-      // fill: red;
-      // cursor: pointer;
-      // opacity: 0;
+    &:focus-within {
+      cursor: pointer;
 
       .modal__button--icon-black {
         appearance: none;
@@ -88,7 +80,6 @@
 
       .modal__button--icon-blue {
         position: absolute;
-        // display: inline-block;
         width: 18px;
         height: 18px;
         background-color: transparent;
@@ -96,13 +87,11 @@
         background-position: center;
         background-size: contain;
         background-origin: content-box;
-        cursor: pointer;
       }
     }
 
     &--icon-black {
       position: absolute;
-      // display: inline-block;
       width: 18px;
       height: 18px;
       background-color: transparent;
@@ -110,7 +99,7 @@
       background-position: center;
       background-size: contain;
       background-origin: content-box;
-      // transition: background-image 250ms $timing-func;
+      transition: background-image 250ms $timing-func;
     }
 
     @include respond-to('mobile') {
