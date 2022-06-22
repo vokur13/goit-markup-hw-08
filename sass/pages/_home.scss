@@ -150,11 +150,12 @@
     padding: 0;
     margin: 0;
 
-    font-weight: 400;
-    font-size: 14px;
-    line-height: calc(24 / 14);
-    letter-spacing: 0.03em;
-    color: getColor('primary-text');
+    // font-weight: 400;
+    // font-size: 14px;
+    // line-height: calc(24 / 14);
+    // letter-spacing: 0.03em;
+    // color: getColor('primary-text');
+    @include font($font-family: null, $font-style: null);
   }
 }
 

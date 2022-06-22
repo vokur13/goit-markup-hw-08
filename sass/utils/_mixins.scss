@@ -51,3 +51,25 @@
         + "Available breakpoints are: #{map-keys($breakpoints)}.";
   }
 }
+
+// Fonts
+
+@mixin font(
+  $font-family: 'Roboto',
+  $font-style: normal,
+  $font-weight: 400,
+  $font-size: 14px,
+  $line-height: 24px,
+  // $text-align,
+  $letter-spacing: 0.03em,
+  $color: getColor('primary-text')
+) {
+  font-family: $font-family;
+  font-style: $font-style;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: calc($line-height/$font-size);
+  // text-align: $text-align;
+  letter-spacing: $letter-spacing;
+  color: $color;
+}
