@@ -1054,10 +1054,9 @@ img {
   font-weight: 900;
   font-size: 26px;
   line-height: 1.6153846154;
-  text-align: center;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
   color: #ffffff;
+  text-transform: uppercase;
 }
 @media screen and (min-width: 1200px) {
   .hero__title {

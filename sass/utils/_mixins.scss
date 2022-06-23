@@ -52,24 +52,18 @@
   }
 }
 
-// Fonts
+// Fonts Mixin
 
 @mixin font(
-  $font-family: 'Roboto',
-  $font-style: normal,
-  $font-weight: 400,
-  $font-size: 14px,
-  $line-height: 24px,
-  // $text-align,
-  $letter-spacing: 0.03em,
-  $color: getColor('primary-text')
+  $f-wgh: 400,
+  $f-sze: 14px,
+  $l-hgh: 24px,
+  $l-spc: 0.03em,
+  $clr: getColor('primary-text')
 ) {
-  font-family: $font-family;
-  font-style: $font-style;
-  font-weight: $font-weight;
-  font-size: $font-size;
-  line-height: calc($line-height/$font-size);
-  // text-align: $text-align;
-  letter-spacing: $letter-spacing;
-  color: $color;
+  font-weight: $f-wgh;
+  font-size: $f-sze;
+  line-height: calc($l-hgh/$f-sze);
+  letter-spacing: $l-spc;
+  color: $clr;
 }

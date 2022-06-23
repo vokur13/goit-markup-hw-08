@@ -48,19 +48,21 @@
 
   &__title {
     margin-bottom: 30px;
-    font-weight: 900;
 
-    font-size: 26px;
-    line-height: calc(42 / 26);
-    text-align: center;
-    letter-spacing: 0.06em;
+    @include font(
+      $f-wgh: 900,
+      $f-sze: 26px,
+      $l-hgh: 42px,
+      $l-spc: 0.06em,
+      $clr: (
+        getColor('bg-prime'),
+      )
+    );
+
     text-transform: uppercase;
 
-    color: getColor('bg-prime');
-
     @include respond-to('desktop') {
-      font-size: 44px;
-      line-height: calc(60 / 44);
+      @include font($f-wgh: null, $f-sze: 44px, $l-hgh: 60px, $l-spc: null, $clr: null);
     }
   }
   &__button {
@@ -155,7 +157,7 @@
     // line-height: calc(24 / 14);
     // letter-spacing: 0.03em;
     // color: getColor('primary-text');
-    @include font($font-family: null, $font-style: null);
+    @include font();
   }
 }
 
