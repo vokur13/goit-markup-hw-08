@@ -1443,7 +1443,7 @@ img {
 }
 
 .projects {
-  margin: -15px;
+  gap: 30px;
   margin-top: 40px;
 }
 @media screen and (min-width: 768px) {
@@ -1460,7 +1460,6 @@ img {
   }
 }
 .projects__item {
-  margin: 15px;
   border: 1px solid #eeeeee;
   flex-basis: calc((100% - 30px) / 1);
 }
