@@ -60,8 +60,8 @@
 }
 
 .projects {
-  // margin: -15px;
-  gap: 30px;
+  margin: -15px;
+  // gap: 30px;
   margin-top: 40px;
 
   @include respond-to('tablet') {
@@ -76,7 +76,7 @@
   }
 
   &__item {
-    // margin: 15px;
+    margin: 15px;
     border: 1px solid getColor('border-prj');
     flex-basis: calc((100% - 2 * 15px) / 1);
 
