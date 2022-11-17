@@ -7,3 +7,9 @@
   color: getColor('bg-prime');
   background-color: getColor('accent');
 }
+
+.class {
+  &:not(:last-child) {
+    margin-right: 15px;
+  }
+}
